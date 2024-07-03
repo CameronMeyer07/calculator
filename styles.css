@@ -1,0 +1,67 @@
+.container {
+    margin: 80px auto;
+    background-color: black;
+    box-sizing: border-box;
+    width: fit-content;
+    padding: 5px;
+    border: 6px double black;
+    border-radius: 5px;
+}
+
+.keypad {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 300px;
+    justify-content: space-between;
+    margin: auto;
+    }
+
+.operator, .operand , .clear {
+    height: 70px;
+    width: 70px;
+    flex: 1 0 auto;
+    font-size: large;
+    border-radius: 5%;    
+}
+
+.display {
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.zero {
+    height: 70px;
+    width: 145px;
+}
+
+.clear {
+    background-color: palevioletred;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.comma {
+    background-color: rgb(0, 252, 105);
+}
+
+.equals, .operand {
+    background-color: grey;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 100ms;
+}
